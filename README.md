@@ -43,7 +43,7 @@ New features are created to enrich the models, including interactions between cu
 
 Several machine learning models are evaluated:
 
-- **Linear Regression**, **Decision Tree**, **Random Forest**, and **CatBoost** from `sklearn` and `catboost` libraries.
+- **Linear Regression**, **Decision Tree**, **Random Forest**, **CatBoost**, and **XGBoost** from `sklearn`, `catboost` and `xgboost` libraries.
 - Models are trained on the historical data (`Past_Data.xlsx`) and evaluated using metrics like RMSE, MAE, and R-squared to select the best performer.
 
 ```python
@@ -51,6 +51,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from catboost import CatBoostRegressor
+from xgboost import XGBRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 ```
 
